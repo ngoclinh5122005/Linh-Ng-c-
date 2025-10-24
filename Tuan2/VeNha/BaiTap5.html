@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5 - Các ngành học UEH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content a {
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .card-content a:hover {
+            color: #007bff;
+        }
+
+        .card-content p {
+            color: #333;
+            text-align: justify;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Các ngành đào tạo tiêu biểu</h2>
+
+    <div class="container">
+        <!-- Ngành Công nghệ phần mềm -->
+        <div class="card">
+            <img src="https://bit.ueh.edu.vn/wp-content/uploads/2021/10/CNPM-300x180.jpg" alt="Công nghệ phần mềm">
+            <div class="card-content">
+                <a href="http://bit.ueh.edu.vn/cong-nghe-phan-mem/" target="_blank">Công nghệ Phần mềm</a>
+                <p>
+                    Nhu cầu xã hội Cách mạng công nghiệp 4.0 giúp công nghệ thông tin và viễn thông (ICT)
+                    xâm nhập mọi mặt đời sống kinh tế xã hội. ICT vì thế mà dần trở thành một trong những
+                    mũi nhọn chiến lược trong phát triển kinh tế quốc gia.
+                </p>
+            </div>
+        </div>
+
+        <!-- Ngành Thương mại điện tử -->
+        <div class="card">
+            <img src="https://bit.ueh.edu.vn/wp-content/uploads/2021/10/TMDT-300x180.jpg" alt="Thương mại điện tử">
+            <div class="card-content">
+                <a href="http://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu/" target="_blank">Ngành Thương mại điện tử</a>
+                <p>
+                    Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước
+                    tăng trưởng mạnh mẽ, góp phần thay đổi hành vi tiêu dùng và mô hình kinh doanh hiện đại.
+                </p>
+            </div>
+        </div>
+
+        <!-- Ngành Hệ thống thông tin kinh doanh -->
+        <div class="card">
+            <img src="https://bit.ueh.edu.vn/wp-content/uploads/2021/10/HTTTKD-300x180.jpg" alt="Hệ thống thông tin kinh doanh">
+            <div class="card-content">
+                <a href="http://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh/" target="_blank">
+                    Hệ thống Thông tin Kinh doanh
+                </a>
+                <p>
+                    Nhu cầu xã hội Hiện nay, ứng dụng công nghệ trong điều hành doanh nghiệp đang được các
+                    nhà quản lý quan tâm hàng đầu nhằm nâng cao hiệu quả ra quyết định và tối ưu hóa quy trình.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

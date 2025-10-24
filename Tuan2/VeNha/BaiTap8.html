@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Structure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eee;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, article, aside, footer {
+            border: 1px solid #999;
+            background-color: #ddd;
+            margin: 10px;
+            padding: 10px;
+        }
+        header img {
+            display: block;
+            margin: 10px auto;
+        }
+        nav {
+            text-align: center;
+            background-color: #ccc;
+            font-weight: bold;
+        }
+        nav a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+        }
+        article {
+            width: 65%;
+            background-color: #ccc;
+        }
+        aside {
+            width: 30%;
+            background-color: #ccc;
+        }
+        figure {
+            text-align: center;
+            margin: 10px;
+        }
+        figure img {
+            width: 90%;
+            border: 1px solid #999;
+        }
+        footer {
+            text-align: center;
+            font-style: italic;
+            background-color: #ccc;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><a href="#">HTML5 Structure</a></h1>
+        <img src="logo.png" alt="Logo Khoa CNTT Kinh Doanh" width="300">
+    </header>
+
+    <nav>
+        <a href="#">Chương trình Đại học</a> |
+        <a href="#">CT Liên thông Đại học</a> |
+        <a href="#">Chương trình Sau đại học</a> |
+        <a href="#">Chương trình quốc tế</a>
+    </nav>
+
+    <section>
+        <article>
+            <h2>Chương trình Đại học</h2>
+            <h3><a href="#">Hệ thống hoạch định nguồn lực doanh nghiệp (ERP)</a></h3>
+            <p>
+                Nhu cầu xã hội hoạch định các nguồn lực một cách hiệu quả để nhằm đến mục tiêu giảm chi phí, 
+                tăng sức cạnh tranh là một vấn đề mà mọi doanh nghiệp luôn phải đối mặt, nhất là trong thời kỳ hội nhập hiện nay. 
+                Hệ thống hoạch định nguồn lực doanh nghiệp (ERP) […]
+            </p>
+            <figure>
+                <img src="erp.jpg" alt="ERP Image">
+            </figure>
+        </article>
+
+        <aside>
+            <h2>Liên kết</h2>
+            <h3><a href="#">Hệ thống thông tin kinh doanh</a></h3>
+            <figure>
+                <img src="business.jpg" alt="Business Information System">
+            </figure>
+            <p>
+                Nhu cầu xã hội hiện nay, ứng dụng công nghệ trong điều hành doanh nghiệp đang được các nhà quản trị quan tâm […]
+            </p>
+        </aside>
+    </section>
+
+    <footer>
+        &copy; 2025 - Khoa Công nghệ Thông tin Kinh doanh
+    </footer>
+
+</body>
+</html>

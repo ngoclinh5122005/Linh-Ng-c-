@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Form Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #2b4f81;
+        }
+        form {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="color"],
+        input[type="date"],
+        input[type="url"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #2b4f81;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #3b6cb7;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML5 Quiz Form</h1>
+
+    <form action="#" method="post">
+        <!-- Câu hỏi 1: Nhập màu -->
+        <label for="q1">Câu 1: Hãy chọn màu yêu thích của bạn</label>
+        <input type="color" id="q1" name="color" required>
+
+        <!-- Câu hỏi 2: Nhập số nguyên >= 20 -->
+        <label for="q2">Câu 2: Hãy nhập một số nguyên lớn hơn hoặc bằng 20</label>
+        <input type="number" id="q2" name="number" min="20" step="1" placeholder="Nhập số ≥ 20" required>
+
+        <!-- Câu hỏi 3: Nhập tên -->
+        <label for="q3">Câu 3: Hãy nhập họ tên của bạn</label>
+        <input type="text" id="q3" name="fullname" placeholder="Nhập họ và tên của bạn" required>
+
+        <!-- Câu hỏi 4: Ngày hợp lệ -->
+        <label for="q4">Câu 4: Hãy chọn ngày sinh của bạn</label>
+        <input type="date" id="q4" name="birthday" required>
+
+        <!-- Câu hỏi 5: URL hợp lệ -->
+        <label for="q5">Câu 5: Hãy nhập địa chỉ trang web yêu thích của bạn</label>
+        <input type="url" id="q5" name="website" placeholder="https://example.com" required>
+
+        <input type="submit" value="Gửi bài làm">
+    </form>
+
+</body>
+</html>
